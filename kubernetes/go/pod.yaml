@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: webserver
+  name: webserver
+spec:
+  containers:
+  - image: dimitatu/goo
+    name: webserver
+    ports:
+      - containerPort: 8080
